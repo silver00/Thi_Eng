@@ -1,0 +1,13 @@
+c:\users\duc\documents\visual studio 2015\Projects\Thi\Thi\bin\Debug\Thi.exe.config
+c:\users\duc\documents\visual studio 2015\Projects\Thi\Thi\bin\Debug\Thi.exe
+c:\users\duc\documents\visual studio 2015\Projects\Thi\Thi\bin\Debug\Thi.pdb
+c:\users\duc\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.csprojResolveAssemblyReference.cache
+c:\users\duc\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.Properties.Resources.resources
+c:\users\duc\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.csproj.GenerateResource.Cache
+c:\users\duc\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.exe
+c:\users\duc\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.pdb
+C:\Users\DUC\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.frmThi.resources
+C:\Users\DUC\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.frmLogin.resources
+C:\Users\DUC\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.frmPre_Test.resources
+C:\Users\DUC\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.frmYeuCau.resources
+C:\Users\DUC\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.frmXemPhanHoi.resources
