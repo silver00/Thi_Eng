@@ -31,11 +31,11 @@ namespace Thi
         {
 
             timer1.Enabled = true;
-            dataGridView2.RowHeadersVisible = false;
-            Column1.Width = dataGridView2.Width;
+            dgvListCauHoi.RowHeadersVisible = false;
+            Column1.Width = dgvListCauHoi.Width;
             for (int i = 1; i <= 50; i++)
             {
-                dataGridView2.Rows.Add("Câu hỏi " + i);
+                dgvListCauHoi.Rows.Add("Câu hỏi " + i);
             }
         }
 
@@ -50,7 +50,7 @@ namespace Thi
         private void timer1_Tick(object sender, EventArgs e)
         {
             second--;
-            label1.Text = minute.ToString() + " : " + second.ToString();
+            Clock.Text = minute.ToString() + " : " + second.ToString();
             if (second == 0)
             {
                 second = 60;
@@ -59,7 +59,7 @@ namespace Thi
                 {
                     timer1.Enabled = false;
                     MessageBox.Show("Dung");
-                    button3.Enabled = false;
+                    btnKetQua.Enabled = false;
                 }
  
             }

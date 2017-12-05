@@ -28,34 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnGuiYeuCau = new System.Windows.Forms.Button();
+            this.rtbYeuCau = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnGuiYeuCau
             // 
-            this.button1.Location = new System.Drawing.Point(144, 179);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 29);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "&Gửi";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnGuiYeuCau.Location = new System.Drawing.Point(144, 179);
+            this.btnGuiYeuCau.Name = "btnGuiYeuCau";
+            this.btnGuiYeuCau.Size = new System.Drawing.Size(90, 29);
+            this.btnGuiYeuCau.TabIndex = 2;
+            this.btnGuiYeuCau.Text = "&Gửi";
+            this.btnGuiYeuCau.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // rtbYeuCau
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 25);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(369, 122);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
+            this.rtbYeuCau.Location = new System.Drawing.Point(12, 25);
+            this.rtbYeuCau.Name = "rtbYeuCau";
+            this.rtbYeuCau.Size = new System.Drawing.Size(369, 122);
+            this.rtbYeuCau.TabIndex = 3;
+            this.rtbYeuCau.Text = "";
             // 
             // frmYeuCau
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 230);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.rtbYeuCau);
+            this.Controls.Add(this.btnGuiYeuCau);
             this.Name = "frmYeuCau";
             this.Text = "frmYeuCau";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmYeuCau_FormClosing);
@@ -65,7 +65,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button btnGuiYeuCau;
+        private System.Windows.Forms.RichTextBox rtbYeuCau;
     }
 }

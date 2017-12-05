@@ -30,9 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.btnThi = new System.Windows.Forms.Button();
+            this.cmbMucDo = new System.Windows.Forms.ComboBox();
+            this.cmbSoCau = new System.Windows.Forms.ComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.hướngDẫnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,39 +58,39 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Số câu";
             // 
-            // button1
+            // btnThi
             // 
-            this.button1.Location = new System.Drawing.Point(134, 207);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 29);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "&Thi";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnThi.Location = new System.Drawing.Point(134, 207);
+            this.btnThi.Name = "btnThi";
+            this.btnThi.Size = new System.Drawing.Size(82, 29);
+            this.btnThi.TabIndex = 2;
+            this.btnThi.Text = "&Thi";
+            this.btnThi.UseVisualStyleBackColor = true;
+            this.btnThi.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox1
+            // cmbMucDo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbMucDo.FormattingEnabled = true;
+            this.cmbMucDo.Items.AddRange(new object[] {
             "Dễ",
             "Trung Bình",
             "Khó"});
-            this.comboBox1.Location = new System.Drawing.Point(146, 64);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 3;
+            this.cmbMucDo.Location = new System.Drawing.Point(146, 64);
+            this.cmbMucDo.Name = "cmbMucDo";
+            this.cmbMucDo.Size = new System.Drawing.Size(121, 24);
+            this.cmbMucDo.TabIndex = 3;
             // 
-            // comboBox2
+            // cmbSoCau
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbSoCau.FormattingEnabled = true;
+            this.cmbSoCau.Items.AddRange(new object[] {
             "20",
             "50",
             "100"});
-            this.comboBox2.Location = new System.Drawing.Point(146, 130);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 4;
+            this.cmbSoCau.Location = new System.Drawing.Point(146, 130);
+            this.cmbSoCau.Name = "cmbSoCau";
+            this.cmbSoCau.Size = new System.Drawing.Size(121, 24);
+            this.cmbSoCau.TabIndex = 4;
             // 
             // menuStrip1
             // 
@@ -130,9 +130,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(352, 276);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmbSoCau);
+            this.Controls.Add(this.cmbMucDo);
+            this.Controls.Add(this.btnThi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -150,9 +150,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button btnThi;
+        private System.Windows.Forms.ComboBox cmbMucDo;
+        private System.Windows.Forms.ComboBox cmbSoCau;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem hướngDẫnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quảnLýToolStripMenuItem;

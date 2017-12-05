@@ -11,3 +11,16 @@ C:\Users\DUC\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.frmLogi
 C:\Users\DUC\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.frmPre_Test.resources
 C:\Users\DUC\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.frmYeuCau.resources
 C:\Users\DUC\documents\visual studio 2015\Projects\Thi\Thi\obj\Debug\Thi.frmXemPhanHoi.resources
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\bin\Debug\Thi.exe.config
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\obj\Debug\Thi.exe
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\obj\Debug\Thi.pdb
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\bin\Debug\Thi.exe
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\bin\Debug\Thi.pdb
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\obj\Debug\Thi.csprojResolveAssemblyReference.cache
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\obj\Debug\Thi.frmXemPhanHoi.resources
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\obj\Debug\Thi.frmYeuCau.resources
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\obj\Debug\Thi.frmThi.resources
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\obj\Debug\Thi.frmLogin.resources
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\obj\Debug\Thi.frmPre_Test.resources
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\obj\Debug\Thi.Properties.Resources.resources
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\obj\Debug\Thi.csproj.GenerateResource.Cache

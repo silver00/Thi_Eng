@@ -30,28 +30,28 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvListCauHoi = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Clock = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnPause = new System.Windows.Forms.Button();
+            this.btnDapAn = new System.Windows.Forms.Button();
+            this.btnKetQua = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnOpenYeuCau = new System.Windows.Forms.Button();
+            this.HienCauHoi = new System.Windows.Forms.RichTextBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.btnPre = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.rbDapAn_D = new System.Windows.Forms.RadioButton();
+            this.rbDapAn_C = new System.Windows.Forms.RadioButton();
+            this.rbDapAn_B = new System.Windows.Forms.RadioButton();
+            this.rbDapAn_A = new System.Windows.Forms.RadioButton();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListCauHoi)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -62,28 +62,28 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel1.Controls.Add(this.dataGridView2);
+            this.panel1.Controls.Add(this.dgvListCauHoi);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(179, 465);
             this.panel1.TabIndex = 5;
             // 
-            // dataGridView2
+            // dgvListCauHoi
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvListCauHoi.AllowUserToAddRows = false;
+            this.dgvListCauHoi.AllowUserToDeleteRows = false;
+            this.dgvListCauHoi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvListCauHoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListCauHoi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
-            this.dataGridView2.Location = new System.Drawing.Point(4, 126);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(172, 336);
-            this.dataGridView2.TabIndex = 1;
+            this.dgvListCauHoi.Location = new System.Drawing.Point(4, 126);
+            this.dgvListCauHoi.Name = "dgvListCauHoi";
+            this.dgvListCauHoi.ReadOnly = true;
+            this.dgvListCauHoi.RowTemplate.Height = 24;
+            this.dgvListCauHoi.Size = new System.Drawing.Size(172, 336);
+            this.dgvListCauHoi.TabIndex = 1;
             // 
             // Column1
             // 
@@ -95,66 +95,66 @@
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.Clock);
             this.panel2.Location = new System.Drawing.Point(1, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(178, 119);
             this.panel2.TabIndex = 0;
             // 
-            // label1
+            // Clock
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 55);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "11:00";
+            this.Clock.AutoSize = true;
+            this.Clock.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clock.Location = new System.Drawing.Point(13, 31);
+            this.Clock.Name = "Clock";
+            this.Clock.Size = new System.Drawing.Size(145, 55);
+            this.Clock.TabIndex = 0;
+            this.Clock.Text = "11:00";
             // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.btnPause);
+            this.panel3.Controls.Add(this.btnDapAn);
+            this.panel3.Controls.Add(this.btnKetQua);
             this.panel3.Location = new System.Drawing.Point(985, 249);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 182);
             this.panel3.TabIndex = 6;
             // 
-            // button5
+            // btnPause
             // 
-            this.button5.Location = new System.Drawing.Point(40, 116);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(125, 39);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "&Thi";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnPause.Location = new System.Drawing.Point(40, 116);
+            this.btnPause.Name = "btnPause";
+            this.btnPause.Size = new System.Drawing.Size(125, 39);
+            this.btnPause.TabIndex = 11;
+            this.btnPause.Text = "&Pause";
+            this.btnPause.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnDapAn
             // 
-            this.button4.Location = new System.Drawing.Point(40, 73);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 39);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "&Xem Đáp Án";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnDapAn.Location = new System.Drawing.Point(40, 73);
+            this.btnDapAn.Name = "btnDapAn";
+            this.btnDapAn.Size = new System.Drawing.Size(125, 39);
+            this.btnDapAn.TabIndex = 10;
+            this.btnDapAn.Text = "&Xem Đáp Án";
+            this.btnDapAn.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnKetQua
             // 
-            this.button3.Location = new System.Drawing.Point(40, 31);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 39);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "&Xem Kết Quả";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnKetQua.Location = new System.Drawing.Point(40, 31);
+            this.btnKetQua.Name = "btnKetQua";
+            this.btnKetQua.Size = new System.Drawing.Size(125, 39);
+            this.btnKetQua.TabIndex = 0;
+            this.btnKetQua.Text = "&Xem Kết Quả";
+            this.btnKetQua.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.Controls.Add(this.button7);
-            this.panel4.Controls.Add(this.button6);
+            this.panel4.Controls.Add(this.btnOpenYeuCau);
             this.panel4.Location = new System.Drawing.Point(985, 12);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 150);
@@ -169,103 +169,106 @@
             this.button7.Text = "&Phản Hồi";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnOpenYeuCau
             // 
-            this.button6.Location = new System.Drawing.Point(40, 22);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(125, 45);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "&Gửi Yêu Cầu";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btnOpenYeuCau.Location = new System.Drawing.Point(40, 22);
+            this.btnOpenYeuCau.Name = "btnOpenYeuCau";
+            this.btnOpenYeuCau.Size = new System.Drawing.Size(125, 45);
+            this.btnOpenYeuCau.TabIndex = 0;
+            this.btnOpenYeuCau.Text = "&Gửi Yêu Cầu";
+            this.btnOpenYeuCau.UseVisualStyleBackColor = true;
+            this.btnOpenYeuCau.Click += new System.EventHandler(this.button6_Click);
             // 
-            // richTextBox1
+            // HienCauHoi
             // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.HienCauHoi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Location = new System.Drawing.Point(243, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(698, 290);
-            this.richTextBox1.TabIndex = 10;
-            this.richTextBox1.Text = "";
+            this.HienCauHoi.Location = new System.Drawing.Point(243, 12);
+            this.HienCauHoi.Name = "HienCauHoi";
+            this.HienCauHoi.Size = new System.Drawing.Size(698, 242);
+            this.HienCauHoi.TabIndex = 10;
+            this.HienCauHoi.Text = "";
             // 
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.Controls.Add(this.button2);
-            this.panel5.Controls.Add(this.button1);
-            this.panel5.Controls.Add(this.radioButton4);
-            this.panel5.Controls.Add(this.radioButton3);
-            this.panel5.Controls.Add(this.radioButton2);
-            this.panel5.Controls.Add(this.radioButton1);
-            this.panel5.Location = new System.Drawing.Point(243, 322);
+            this.panel5.Controls.Add(this.btnPre);
+            this.panel5.Controls.Add(this.btnNext);
+            this.panel5.Controls.Add(this.rbDapAn_D);
+            this.panel5.Controls.Add(this.rbDapAn_C);
+            this.panel5.Controls.Add(this.rbDapAn_B);
+            this.panel5.Controls.Add(this.rbDapAn_A);
+            this.panel5.Location = new System.Drawing.Point(243, 280);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(698, 155);
+            this.panel5.Size = new System.Drawing.Size(698, 197);
             this.panel5.TabIndex = 11;
             // 
-            // button2
+            // btnPre
             // 
-            this.button2.Location = new System.Drawing.Point(258, 112);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 31);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Câu trước ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnPre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnPre.BackgroundImage = global::Thi.Properties.Resources.if_forward_1265691;
+            this.btnPre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPre.Location = new System.Drawing.Point(268, 156);
+            this.btnPre.Name = "btnPre";
+            this.btnPre.Size = new System.Drawing.Size(58, 38);
+            this.btnPre.TabIndex = 15;
+            this.btnPre.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnNext
             // 
-            this.button1.Location = new System.Drawing.Point(369, 112);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 31);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Câu tiếp theo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnNext.BackgroundImage = global::Thi.Properties.Resources.if_forward_126569;
+            this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNext.Location = new System.Drawing.Point(332, 156);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(58, 38);
+            this.btnNext.TabIndex = 14;
+            this.btnNext.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rbDapAn_D
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(440, 68);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(110, 21);
-            this.radioButton4.TabIndex = 13;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbDapAn_D.AutoSize = true;
+            this.rbDapAn_D.Location = new System.Drawing.Point(436, 68);
+            this.rbDapAn_D.Name = "rbDapAn_D";
+            this.rbDapAn_D.Size = new System.Drawing.Size(110, 21);
+            this.rbDapAn_D.TabIndex = 13;
+            this.rbDapAn_D.TabStop = true;
+            this.rbDapAn_D.Text = "radioButton4";
+            this.rbDapAn_D.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbDapAn_C
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(147, 68);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(110, 21);
-            this.radioButton3.TabIndex = 12;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbDapAn_C.AutoSize = true;
+            this.rbDapAn_C.Location = new System.Drawing.Point(103, 68);
+            this.rbDapAn_C.Name = "rbDapAn_C";
+            this.rbDapAn_C.Size = new System.Drawing.Size(110, 21);
+            this.rbDapAn_C.TabIndex = 12;
+            this.rbDapAn_C.TabStop = true;
+            this.rbDapAn_C.Text = "radioButton3";
+            this.rbDapAn_C.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbDapAn_B
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(440, 18);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(110, 21);
-            this.radioButton2.TabIndex = 11;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbDapAn_B.AutoSize = true;
+            this.rbDapAn_B.Location = new System.Drawing.Point(436, 18);
+            this.rbDapAn_B.Name = "rbDapAn_B";
+            this.rbDapAn_B.Size = new System.Drawing.Size(110, 21);
+            this.rbDapAn_B.TabIndex = 11;
+            this.rbDapAn_B.TabStop = true;
+            this.rbDapAn_B.Text = "radioButton2";
+            this.rbDapAn_B.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbDapAn_A
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(147, 18);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(110, 21);
-            this.radioButton1.TabIndex = 10;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbDapAn_A.AutoSize = true;
+            this.rbDapAn_A.Location = new System.Drawing.Point(103, 18);
+            this.rbDapAn_A.Name = "rbDapAn_A";
+            this.rbDapAn_A.Size = new System.Drawing.Size(110, 21);
+            this.rbDapAn_A.TabIndex = 10;
+            this.rbDapAn_A.TabStop = true;
+            this.rbDapAn_A.Text = "radioButton1";
+            this.rbDapAn_A.UseVisualStyleBackColor = true;
             // 
             // timer1
             // 
@@ -276,9 +279,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1221, 489);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.HienCauHoi);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
@@ -286,7 +290,7 @@
             this.Text = "Thi";
             this.Load += new System.EventHandler(this.frmThi_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListCauHoi)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -302,22 +306,22 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView dgvListCauHoi;
+        private System.Windows.Forms.Button btnPause;
+        private System.Windows.Forms.Button btnDapAn;
+        private System.Windows.Forms.Button btnKetQua;
         private System.Windows.Forms.DataGridViewButtonColumn Column1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox HienCauHoi;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnOpenYeuCau;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnPre;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.RadioButton rbDapAn_D;
+        private System.Windows.Forms.RadioButton rbDapAn_C;
+        private System.Windows.Forms.RadioButton rbDapAn_B;
+        private System.Windows.Forms.RadioButton rbDapAn_A;
+        private System.Windows.Forms.Label Clock;
         private System.Windows.Forms.Timer timer1;
     }
 }
