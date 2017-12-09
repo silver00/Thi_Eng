@@ -7,3 +7,4 @@ Thi/obj/Debug/Thi.csproj.FileListAbsolute.txt
 *.txt
 *.cache
 Thi/bin/Debug/Thi.exe
+Thi/DAL/KetNoiDB.cs

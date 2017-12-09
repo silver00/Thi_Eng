@@ -17,6 +17,7 @@ namespace Thi.DAL
         private SqlTransaction tran = null;
         public KetNoiDB()
         {
+            //br_tudv
             conn = new SqlConnection(@"Data Source=BARNEY;Initial Catalog=quiz;Integrated Security=True");
         }
 
