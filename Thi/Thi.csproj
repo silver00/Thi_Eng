@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\DethiBus.cs" />
     <Compile Include="ClassUI\BaiThiUI.cs" />
     <Compile Include="ClassUI\NguoiDungUI.cs" />
     <Compile Include="ClassUI\QuanLyCauHoiUI.cs" />
@@ -59,6 +60,23 @@
     <Compile Include="Class\QuanLyCauHoi.cs" />
     <Compile Include="Class\QuanLyPhanHoi.cs" />
     <Compile Include="Class\QuanTriVien.cs" />
+    <Compile Include="DAL\DethiDAL.cs" />
+    <Compile Include="DAL\KetNoiDB.cs" />
+    <Compile Include="Entities\Cauhoi.cs" />
+    <Compile Include="Entities\DTO\PhanchiaQuiz.cs" />
+    <Compile Include="Entities\DTO\ResultQuiz.cs" />
+    <Compile Include="form\frmDapan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmDapan.Designer.cs">
+      <DependentUpon>frmDapan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\frmKetquaThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form\frmKetquaThi.Designer.cs">
+      <DependentUpon>frmKetquaThi.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\frmXemPhanHoi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,8 +107,18 @@
     <Compile Include="form\frmPre_Test.Designer.cs">
       <DependentUpon>frmPre_Test.cs</DependentUpon>
     </Compile>
+    <Compile Include="Global\GlobalVariables.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\Constants.cs" />
+    <Compile Include="Util\ConvertUtils.cs" />
+    <Compile Include="Util\DateUtils.cs" />
+    <EmbeddedResource Include="form\frmDapan.resx">
+      <DependentUpon>frmDapan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\frmKetquaThi.resx">
+      <DependentUpon>frmKetquaThi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\frmXemPhanHoi.resx">
       <DependentUpon>frmXemPhanHoi.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,7 +155,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="data\quiz.sql" />
@@ -135,6 +165,7 @@
     <None Include="Resources\if_forward_1265692.png" />
     <None Include="Resources\if_forward_1265691.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
