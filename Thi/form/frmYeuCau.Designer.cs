@@ -82,7 +82,7 @@
             this.Controls.Add(this.rtbYeuCau);
             this.Controls.Add(this.btnGuiYeuCau);
             this.Name = "frmYeuCau";
-            this.Text = "frmYeuCau";
+            this.Text = "Gửi Yêu Cầu";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmYeuCau_FormClosing);
             this.Load += new System.EventHandler(this.frmYeuCau_Load);
             this.ResumeLayout(false);

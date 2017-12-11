@@ -48,7 +48,7 @@
             this.ClientSize = new System.Drawing.Size(696, 307);
             this.Controls.Add(this.dgvPhanHoi);
             this.Name = "frmXemPhanHoi";
-            this.Text = "frmXemPhanHoi";
+            this.Text = "Phản Hồi";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhanHoi)).EndInit();
             this.ResumeLayout(false);
 
