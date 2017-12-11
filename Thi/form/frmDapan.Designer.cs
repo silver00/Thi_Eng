@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDapan));
             this.lblDo = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.dgvList = new System.Windows.Forms.DataGridView();
-            this.lblNotdo = new System.Windows.Forms.Label();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colUserAnsw = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblNotdo = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,8 +67,8 @@
             this.dgvList.AllowUserToDeleteRows = false;
             this.dgvList.AllowUserToResizeColumns = false;
             this.dgvList.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
@@ -79,6 +79,24 @@
             this.dgvList.Size = new System.Drawing.Size(171, 305);
             this.dgvList.TabIndex = 4;
             // 
+            // colID
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colID.DefaultCellStyle = dataGridViewCellStyle2;
+            this.colID.HeaderText = "Câu";
+            this.colID.Name = "colID";
+            this.colID.ReadOnly = true;
+            this.colID.Width = 40;
+            // 
+            // colUserAnsw
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colUserAnsw.DefaultCellStyle = dataGridViewCellStyle3;
+            this.colUserAnsw.HeaderText = "Đáp án bạn chọn";
+            this.colUserAnsw.Name = "colUserAnsw";
+            this.colUserAnsw.ReadOnly = true;
+            this.colUserAnsw.Width = 120;
+            // 
             // lblNotdo
             // 
             this.lblNotdo.AutoSize = true;
@@ -88,24 +106,6 @@
             this.lblNotdo.Size = new System.Drawing.Size(178, 24);
             this.lblNotdo.TabIndex = 7;
             this.lblNotdo.Text = "Số câu chưa làm: ";
-            // 
-            // colID
-            // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colID.DefaultCellStyle = dataGridViewCellStyle8;
-            this.colID.HeaderText = "Câu";
-            this.colID.Name = "colID";
-            this.colID.ReadOnly = true;
-            this.colID.Width = 40;
-            // 
-            // colUserAnsw
-            // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colUserAnsw.DefaultCellStyle = dataGridViewCellStyle9;
-            this.colUserAnsw.HeaderText = "Đáp án bạn chọn";
-            this.colUserAnsw.Name = "colUserAnsw";
-            this.colUserAnsw.ReadOnly = true;
-            this.colUserAnsw.Width = 120;
             // 
             // frmDapan
             // 

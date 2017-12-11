@@ -29,6 +29,7 @@ namespace Thi
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Visible = false;
             frmThi thi = new frmThi();
             Constants.MUCDO = Convert.ToInt32(cmbMucDo.SelectedValue);
             Constants.SOLUONG = Convert.ToInt32(cmbSoCau.SelectedValue);
