@@ -18,7 +18,7 @@ namespace Thi.DAL
         public KetNoiDB()
         {
             //br_tudv
-            conn = new SqlConnection(@"Data Source=BARNEY;Initial Catalog=quiz;Integrated Security=True");
+            conn = new SqlConnection(@"Data Source=DESKTOP-759AD1N\SQLEXPRESS;Initial Catalog=quiz;Integrated Security=True");
         }
 
         /// <summary>

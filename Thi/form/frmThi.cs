@@ -125,7 +125,7 @@ namespace Thi
                     timer1.Stop();
                     timer1.Enabled = false;
                     MessageBox.Show("Dung");
-                    btnKetQua.Enabled = false;
+                    btnPhieuTraLoi.Enabled = false;
                 }
  
             }
@@ -193,27 +193,27 @@ namespace Thi
             Application.Exit();
         }
 
-        private void btnKetQua_Click(object sender, EventArgs e)
-        {
-            pushAnswer(dgvListCauHoi.CurrentRow.Index  + 1);
-
-            frmKetquaThi frm = new frmKetquaThi();
-            frm.ShowDialog();
-        }
-
-        private void btnPause_Click(object sender, EventArgs e)
-        {
-            timer1.Stop();
-            timer1.Enabled = false;
-            this.Hide();
-            frmKetquaThi frm = new frmKetquaThi();
-            frm.ShowDialog();
-        }
-
-        private void btnDapAn_Click(object sender, EventArgs e)
+        private void btnPhieuTraLoi_Click(object sender, EventArgs e)
         {
             pushAnswer(dgvListCauHoi.CurrentRow.Index + 1);
             frmDapan frm = new frmDapan();
+            frm.ShowDialog();
+        }
+
+        //private void btnPause_Click(object sender, EventArgs e)
+        //{
+        //    timer1.Stop();
+        //    timer1.Enabled = false;
+        //    this.Hide();
+        //    frmKetquaThi frm = new frmKetquaThi();
+        //    frm.ShowDialog();
+        //}
+
+        private void btnNopBai_Click(object sender, EventArgs e)
+        {
+            pushAnswer(dgvListCauHoi.CurrentRow.Index + 1);
+
+            frmKetquaThi frm = new frmKetquaThi();
             frm.ShowDialog();
         }
     }

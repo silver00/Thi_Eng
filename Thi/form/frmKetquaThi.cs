@@ -79,9 +79,6 @@ namespace Thi.form
             lblScore.Text += string.Format("{0:0.00}", score);
         }
 
-        private void frmKetqua_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
+        
     }
 }

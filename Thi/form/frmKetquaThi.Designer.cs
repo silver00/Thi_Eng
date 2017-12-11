@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKetquaThi));
             this.dgvList = new System.Windows.Forms.DataGridView();
-            this.lblCorrectAnswer = new System.Windows.Forms.Label();
-            this.lblScore = new System.Windows.Forms.Label();
             this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCorrectAnsw = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colUserAnsw = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblCorrectAnswer = new System.Windows.Forms.Label();
+            this.lblScore = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,36 +52,17 @@
             this.colID,
             this.colCorrectAnsw,
             this.colUserAnsw});
-            this.dgvList.Location = new System.Drawing.Point(2, 2);
+            this.dgvList.Location = new System.Drawing.Point(3, 2);
+            this.dgvList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvList.Name = "dgvList";
             this.dgvList.ReadOnly = true;
-            this.dgvList.Size = new System.Drawing.Size(282, 305);
+            this.dgvList.Size = new System.Drawing.Size(376, 375);
             this.dgvList.TabIndex = 0;
-            // 
-            // lblCorrectAnswer
-            // 
-            this.lblCorrectAnswer.AutoSize = true;
-            this.lblCorrectAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorrectAnswer.Location = new System.Drawing.Point(22, 340);
-            this.lblCorrectAnswer.Name = "lblCorrectAnswer";
-            this.lblCorrectAnswer.Size = new System.Drawing.Size(142, 24);
-            this.lblCorrectAnswer.TabIndex = 2;
-            this.lblCorrectAnswer.Text = "Số câu đúng: ";
-            // 
-            // lblScore
-            // 
-            this.lblScore.AutoSize = true;
-            this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScore.Location = new System.Drawing.Point(22, 377);
-            this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(70, 24);
-            this.lblScore.TabIndex = 3;
-            this.lblScore.Text = "Điểm: ";
             // 
             // colID
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colID.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colID.DefaultCellStyle = dataGridViewCellStyle1;
             this.colID.HeaderText = "Câu";
             this.colID.Name = "colID";
             this.colID.ReadOnly = true;
@@ -89,34 +70,56 @@
             // 
             // colCorrectAnsw
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colCorrectAnsw.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colCorrectAnsw.DefaultCellStyle = dataGridViewCellStyle2;
             this.colCorrectAnsw.HeaderText = "Đáp án đúng";
             this.colCorrectAnsw.Name = "colCorrectAnsw";
             this.colCorrectAnsw.ReadOnly = true;
             // 
             // colUserAnsw
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colUserAnsw.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colUserAnsw.DefaultCellStyle = dataGridViewCellStyle3;
             this.colUserAnsw.HeaderText = "Đáp án của bạn";
             this.colUserAnsw.Name = "colUserAnsw";
             this.colUserAnsw.ReadOnly = true;
             this.colUserAnsw.Width = 110;
             // 
-            // frmKetqua
+            // lblCorrectAnswer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.lblCorrectAnswer.AutoSize = true;
+            this.lblCorrectAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorrectAnswer.Location = new System.Drawing.Point(29, 418);
+            this.lblCorrectAnswer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCorrectAnswer.Name = "lblCorrectAnswer";
+            this.lblCorrectAnswer.Size = new System.Drawing.Size(172, 29);
+            this.lblCorrectAnswer.TabIndex = 2;
+            this.lblCorrectAnswer.Text = "Số câu đúng: ";
+            // 
+            // lblScore
+            // 
+            this.lblScore.AutoSize = true;
+            this.lblScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScore.Location = new System.Drawing.Point(29, 464);
+            this.lblScore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(88, 29);
+            this.lblScore.TabIndex = 3;
+            this.lblScore.Text = "Điểm: ";
+            // 
+            // frmKetquaThi
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(286, 435);
+            this.ClientSize = new System.Drawing.Size(381, 535);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.lblCorrectAnswer);
             this.Controls.Add(this.dgvList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "frmKetqua";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "frmKetquaThi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmKetqua";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmKetqua_FormClosing);
             this.Load += new System.EventHandler(this.frmKetqua_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).EndInit();
             this.ResumeLayout(false);
