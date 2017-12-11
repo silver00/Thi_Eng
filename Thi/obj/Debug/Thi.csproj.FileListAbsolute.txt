@@ -39,3 +39,5 @@ E:\Git\Thi_Eng\Thi\obj\Debug\Thi.Properties.Resources.resources
 E:\Git\Thi_Eng\Thi\obj\Debug\Thi.csproj.GenerateResource.Cache
 E:\Git\Thi_Eng\Thi\obj\Debug\Thi.form.frmDapan.resources
 E:\Git\Thi_Eng\Thi\obj\Debug\Thi.form.frmKetquaThi.resources
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\obj\Debug\Thi.form.frmDapan.resources
+C:\Users\DUC\Desktop\Model_Design\Thi\Thi\obj\Debug\Thi.form.frmKetquaThi.resources

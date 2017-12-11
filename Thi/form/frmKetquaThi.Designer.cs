@@ -119,7 +119,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmKetquaThi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmKetqua";
+            this.Text = "Kết Quả Thi";
             this.Load += new System.EventHandler(this.frmKetqua_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvList)).EndInit();
             this.ResumeLayout(false);
