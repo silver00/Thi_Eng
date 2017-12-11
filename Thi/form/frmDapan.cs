@@ -67,5 +67,6 @@ namespace Thi.form
             lblDo.Text += numAnswers.ToString();
             lblNotdo.Text += (totalQuiz - numAnswers);
         }
+
     }
 }

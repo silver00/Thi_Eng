@@ -21,7 +21,10 @@ namespace Thi.DAL
 
         public DataTable getSoluongcauhoi()
         {
-            string query = @"select masoluong, tongsocauhoi from soluongcauhoi";
+            string query = @"select masoluong
+                            ,' ' +  CONVERT(varchar(10), tongsocauhoi) + 
+                            ' ( ' + CONVERT(varchar(10), thoigianthi) +' phút )' 
+                            as tongsocauhoi from soluongcauhoi";
             DataTable dt = db.GetDataTable(query);
             return dt;
         }

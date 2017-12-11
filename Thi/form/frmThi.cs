@@ -39,8 +39,8 @@ namespace Thi
         private void frmThi_Load(object sender, EventArgs e)
         {
             minute = dethiBus.getThoigianThi(Constants.SOLUONG) - 1;
-            
-            
+
+
             dgvListCauHoi.RowHeadersVisible = false;
             listCauhoi = dethiBus.getListCauHoi(Constants.MUCDO, Constants.SOLUONG);
             dethiBus.saveDethi(Constants.MUCDO, Constants.SOLUONG, DateUtils.getTimeInMilis(), listCauhoi);
@@ -51,7 +51,7 @@ namespace Thi
             {
                 dgvListCauHoi.Rows.Add("Câu hỏi " + i);
             }
-            
+
             GlobalVariables.rightNowQuestion = 1;
             setQuestion(GlobalVariables.rightNowQuestion - 1);
 
@@ -70,7 +70,7 @@ namespace Thi
             HienCauHoi.SelectedText = "\t" + listCauhoi[index].thongtincauhoi;
 
             rbDapAn_A.Text = listCauhoi[index].dapana;
-            
+
             rbDapAn_B.Text = listCauhoi[index].dapanb;
             rbDapAn_C.Text = listCauhoi[index].dapanc;
             rbDapAn_D.Text = listCauhoi[index].dapand;
@@ -78,20 +78,24 @@ namespace Thi
             if (GlobalVariables.mapAnswer.ContainsKey(index + 1))
             {
                 var answer = GlobalVariables.mapAnswer[index + 1].ToUpper();
-                if(answer == "A")
+                if (answer == "A")
                 {
                     rbDapAn_A.Checked = true;
-                } else if(answer == "B")
+                }
+                else if (answer == "B")
                 {
                     rbDapAn_B.Checked = true;
-                } else if(answer == "C")
+                }
+                else if (answer == "C")
                 {
                     rbDapAn_C.Checked = true;
-                } else
+                }
+                else
                 {
                     rbDapAn_D.Checked = true;
                 }
-            } else
+            }
+            else
             {
                 rbDapAn_A.Checked = rbDapAn_B.Checked = rbDapAn_C.Checked = rbDapAn_D.Checked = false;
             }
@@ -102,7 +106,7 @@ namespace Thi
             //    dgvListCauHoi.Rows[oldIndex].Selected = false;
             //}
             dgvListCauHoi.Rows[index].Selected = true;
-            
+
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -110,8 +114,8 @@ namespace Thi
             frmYeuCau yeucau = new frmYeuCau();
             yeucau.ShowDialog();
         }
-        
-        
+
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             second--;
@@ -120,14 +124,20 @@ namespace Thi
             {
                 second = 60;
                 minute--;
-                if(minute == -1)
+                if (minute == -1)
                 {
                     timer1.Stop();
                     timer1.Enabled = false;
-                    MessageBox.Show("Dung");
+
                     btnPhieuTraLoi.Enabled = false;
+                    timer1.Stop();
+                    Clock.Text = "00:00";
+                    panel6.Enabled = false;
+                    btnPhieuTraLoi.Text = "Đáp án";
+                    frmKetquaThi frm = new frmKetquaThi();
+                    frm.ShowDialog();
                 }
- 
+
             }
         }
 
@@ -140,7 +150,7 @@ namespace Thi
                 GlobalVariables.rightNowQuestion--;
             }
             setQuestion(GlobalVariables.rightNowQuestion - 1);
-            
+
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -152,7 +162,7 @@ namespace Thi
                 GlobalVariables.rightNowQuestion++;
             }
             setQuestion(GlobalVariables.rightNowQuestion - 1);
-            
+
         }
 
         private void pushAnswer(int index)
@@ -196,8 +206,17 @@ namespace Thi
         private void btnPhieuTraLoi_Click(object sender, EventArgs e)
         {
             pushAnswer(dgvListCauHoi.CurrentRow.Index + 1);
-            frmDapan frm = new frmDapan();
-            frm.ShowDialog();
+            if (Clock.Text.Equals("00:00"))
+            {
+                frmKetquaThi frm = new frmKetquaThi();
+                frm.ShowDialog();
+            }
+            else
+            {
+                frmDapan frm = new frmDapan();
+                frm.ShowDialog();
+            }
+            
         }
 
         //private void btnPause_Click(object sender, EventArgs e)
@@ -212,12 +231,21 @@ namespace Thi
         private void btnNopBai_Click(object sender, EventArgs e)
         {
             pushAnswer(dgvListCauHoi.CurrentRow.Index + 1);
+            DialogResult res = MessageBox.Show("Bạn có muốn nộp bài", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (res == DialogResult.Yes)
+            {
+                timer1.Stop();
+                Clock.Text = "00:00";
+                panel6.Enabled = false;
+                btnPhieuTraLoi.Text = "Đáp án";
+                btnNopBai.Enabled = false;
+                frmKetquaThi frm = new frmKetquaThi();
+                frm.ShowDialog();
+            }
 
-            frmKetquaThi frm = new frmKetquaThi();
-            frm.ShowDialog();
         }
     }
-    
+
 
 
 }

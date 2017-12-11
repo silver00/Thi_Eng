@@ -71,7 +71,10 @@
             this.dgvList.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+<<<<<<< HEAD
             this.dgvList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+=======
+>>>>>>> 3ca7a3a83cf7620878687b6cc0eaeb3496d51def
             this.dgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
@@ -107,6 +110,16 @@
             this.lblNotdo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNotdo.Name = "lblNotdo";
             this.lblNotdo.Size = new System.Drawing.Size(218, 29);
+            this.lblNotdo.TabIndex = 7;
+            this.lblNotdo.Text = "Số câu chưa làm: ";
+            // 
+            // lblNotdo
+            // 
+            this.lblNotdo.AutoSize = true;
+            this.lblNotdo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotdo.Location = new System.Drawing.Point(200, 93);
+            this.lblNotdo.Name = "lblNotdo";
+            this.lblNotdo.Size = new System.Drawing.Size(178, 24);
             this.lblNotdo.TabIndex = 7;
             this.lblNotdo.Text = "Số câu chưa làm: ";
             // 
