@@ -71,7 +71,7 @@
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(179, 465);
+            this.panel1.Size = new System.Drawing.Size(193, 465);
             this.panel1.TabIndex = 5;
             // 
             // dgvListCauHoi
@@ -82,6 +82,8 @@
             this.dgvListCauHoi.AllowUserToResizeRows = false;
             this.dgvListCauHoi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.dgvListCauHoi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvListCauHoi.BackgroundColor = System.Drawing.Color.Honeydew;
             this.dgvListCauHoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListCauHoi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
@@ -90,7 +92,7 @@
             this.dgvListCauHoi.Name = "dgvListCauHoi";
             this.dgvListCauHoi.ReadOnly = true;
             this.dgvListCauHoi.RowTemplate.Height = 24;
-            this.dgvListCauHoi.Size = new System.Drawing.Size(172, 336);
+            this.dgvListCauHoi.Size = new System.Drawing.Size(186, 336);
             this.dgvListCauHoi.TabIndex = 1;
             this.dgvListCauHoi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvListCauHoi_CellClick);
             // 
@@ -101,23 +103,24 @@
             this.Column1.HeaderText = "Danh sách câu hỏi";
             this.Column1.Name = "Column1";
             this.Column1.ReadOnly = true;
-            this.Column1.Width = 105;
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.Clock);
             this.panel2.Location = new System.Drawing.Point(1, 2);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(179, 119);
+            this.panel2.Size = new System.Drawing.Size(189, 119);
             this.panel2.TabIndex = 0;
             // 
             // Clock
             // 
             this.Clock.AutoSize = true;
             this.Clock.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clock.ForeColor = System.Drawing.Color.White;
             this.Clock.Location = new System.Drawing.Point(13, 31);
             this.Clock.Name = "Clock";
             this.Clock.Size = new System.Drawing.Size(145, 55);
@@ -127,40 +130,46 @@
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.btnNopBai);
             this.panel3.Controls.Add(this.btnPhieuTraLoi);
             this.panel3.Location = new System.Drawing.Point(985, 249);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 182);
+            this.panel3.Size = new System.Drawing.Size(200, 169);
             this.panel3.TabIndex = 6;
             // 
             // btnNopBai
             // 
+            this.btnNopBai.BackColor = System.Drawing.Color.Honeydew;
+            this.btnNopBai.ForeColor = System.Drawing.Color.DarkViolet;
             this.btnNopBai.Location = new System.Drawing.Point(40, 73);
             this.btnNopBai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNopBai.Name = "btnNopBai";
             this.btnNopBai.Size = new System.Drawing.Size(125, 39);
             this.btnNopBai.TabIndex = 10;
             this.btnNopBai.Text = "&Nộp Bài";
-            this.btnNopBai.UseVisualStyleBackColor = true;
+            this.btnNopBai.UseVisualStyleBackColor = false;
             this.btnNopBai.Click += new System.EventHandler(this.btnNopBai_Click);
             // 
             // btnPhieuTraLoi
             // 
+            this.btnPhieuTraLoi.BackColor = System.Drawing.Color.Honeydew;
+            this.btnPhieuTraLoi.ForeColor = System.Drawing.Color.DarkViolet;
             this.btnPhieuTraLoi.Location = new System.Drawing.Point(40, 31);
             this.btnPhieuTraLoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPhieuTraLoi.Name = "btnPhieuTraLoi";
             this.btnPhieuTraLoi.Size = new System.Drawing.Size(125, 39);
             this.btnPhieuTraLoi.TabIndex = 0;
             this.btnPhieuTraLoi.Text = "&Phiếu trả lời";
-            this.btnPhieuTraLoi.UseVisualStyleBackColor = true;
+            this.btnPhieuTraLoi.UseVisualStyleBackColor = false;
             this.btnPhieuTraLoi.Click += new System.EventHandler(this.btnPhieuTraLoi_Click);
             // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.button7);
             this.panel4.Controls.Add(this.btnOpenYeuCau);
             this.panel4.Location = new System.Drawing.Point(985, 12);
@@ -171,23 +180,27 @@
             // 
             // button7
             // 
+            this.button7.BackColor = System.Drawing.Color.Honeydew;
+            this.button7.ForeColor = System.Drawing.Color.DarkViolet;
             this.button7.Location = new System.Drawing.Point(40, 74);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(125, 46);
             this.button7.TabIndex = 1;
             this.button7.Text = "&Phản Hồi";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button7.UseVisualStyleBackColor = false;
             // 
             // btnOpenYeuCau
             // 
+            this.btnOpenYeuCau.BackColor = System.Drawing.Color.Honeydew;
+            this.btnOpenYeuCau.ForeColor = System.Drawing.Color.DarkViolet;
             this.btnOpenYeuCau.Location = new System.Drawing.Point(40, 22);
             this.btnOpenYeuCau.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnOpenYeuCau.Name = "btnOpenYeuCau";
             this.btnOpenYeuCau.Size = new System.Drawing.Size(125, 46);
             this.btnOpenYeuCau.TabIndex = 0;
             this.btnOpenYeuCau.Text = "&Gửi Yêu Cầu";
-            this.btnOpenYeuCau.UseVisualStyleBackColor = true;
+            this.btnOpenYeuCau.UseVisualStyleBackColor = false;
             this.btnOpenYeuCau.Click += new System.EventHandler(this.button6_Click);
             // 
             // HienCauHoi
@@ -195,7 +208,10 @@
             this.HienCauHoi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.HienCauHoi.BackColor = System.Drawing.Color.Honeydew;
+            this.HienCauHoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.HienCauHoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HienCauHoi.ForeColor = System.Drawing.Color.Black;
             this.HienCauHoi.Location = new System.Drawing.Point(243, 12);
             this.HienCauHoi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.HienCauHoi.Name = "HienCauHoi";
@@ -207,6 +223,7 @@
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.label4);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.label2);
@@ -269,10 +286,10 @@
             // 
             // btnPre
             // 
-            this.btnPre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnPre.BackColor = System.Drawing.Color.Honeydew;
             this.btnPre.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPre.BackgroundImage")));
             this.btnPre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPre.Location = new System.Drawing.Point(268, 156);
+            this.btnPre.Location = new System.Drawing.Point(277, 154);
             this.btnPre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPre.Name = "btnPre";
             this.btnPre.Size = new System.Drawing.Size(59, 38);
@@ -282,14 +299,15 @@
             // 
             // btnNext
             // 
+            this.btnNext.BackColor = System.Drawing.Color.Honeydew;
             this.btnNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNext.BackgroundImage")));
             this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNext.Location = new System.Drawing.Point(332, 156);
+            this.btnNext.Location = new System.Drawing.Point(341, 154);
             this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(59, 38);
             this.btnNext.TabIndex = 14;
-            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // rbDapAn_D
@@ -335,6 +353,7 @@
             // 
             this.rbDapAn_A.AutoSize = true;
             this.rbDapAn_A.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbDapAn_A.ForeColor = System.Drawing.Color.Black;
             this.rbDapAn_A.Location = new System.Drawing.Point(108, 18);
             this.rbDapAn_A.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rbDapAn_A.Name = "rbDapAn_A";
@@ -353,7 +372,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(1221, 489);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.HienCauHoi);

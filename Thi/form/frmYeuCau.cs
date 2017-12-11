@@ -30,5 +30,15 @@ namespace Thi
                 e.Cancel = (e.CloseReason == CloseReason.UserClosing);
             }
         }
+
+        private void rtbYeuCau_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

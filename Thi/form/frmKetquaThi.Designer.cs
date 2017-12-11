@@ -47,13 +47,14 @@
             this.dgvList.AllowUserToDeleteRows = false;
             this.dgvList.AllowUserToResizeColumns = false;
             this.dgvList.AllowUserToResizeRows = false;
+            this.dgvList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colID,
             this.colCorrectAnsw,
             this.colUserAnsw});
             this.dgvList.Location = new System.Drawing.Point(3, 2);
-            this.dgvList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvList.Margin = new System.Windows.Forms.Padding(4);
             this.dgvList.Name = "dgvList";
             this.dgvList.ReadOnly = true;
             this.dgvList.Size = new System.Drawing.Size(376, 375);
@@ -66,7 +67,6 @@
             this.colID.HeaderText = "Câu";
             this.colID.Name = "colID";
             this.colID.ReadOnly = true;
-            this.colID.Width = 40;
             // 
             // colCorrectAnsw
             // 
@@ -83,7 +83,6 @@
             this.colUserAnsw.HeaderText = "Đáp án của bạn";
             this.colUserAnsw.Name = "colUserAnsw";
             this.colUserAnsw.ReadOnly = true;
-            this.colUserAnsw.Width = 110;
             // 
             // lblCorrectAnswer
             // 
@@ -111,12 +110,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(381, 535);
             this.Controls.Add(this.lblScore);
             this.Controls.Add(this.lblCorrectAnswer);
             this.Controls.Add(this.dgvList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmKetquaThi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmKetqua";
