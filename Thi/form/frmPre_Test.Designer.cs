@@ -135,6 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.ClientSize = new System.Drawing.Size(264, 224);
             this.Controls.Add(this.cmbSoCau);
             this.Controls.Add(this.cmbMucDo);
@@ -146,7 +147,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPre_Test";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pre_Test";
+            this.Text = "Chọn kiểu thi";
             this.Load += new System.EventHandler(this.frmPre_Test_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
